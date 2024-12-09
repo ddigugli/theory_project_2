@@ -1,0 +1,113 @@
+abc_star_drew.csv is being processed with input: abcabab
+machine being used is, a*b*c* Nondeterministic
+input string is, abcabab
+
+depth 0:
+[], (q0), [abcabab]
+
+depth 1:
+[a], (q0), [bcabab]
+[a], (q1), [bcabab]
+[a], (q2), [bcabab]
+[a], (q3), [bcabab]
+
+depth 2:
+[ab], (q1), [cabab]
+[ab], (q2), [cabab]
+[ab], (q3), [cabab]
+[ab], (q1), [cabab]
+[ab], (q2), [cabab]
+[ab], (q3), [cabab]
+
+depth 3:
+[abc], (q2), [abab]
+[abc], (q3), [abab]
+depth of config tree: 4
+total transitions simulated: 13
+degree of ndm: 3.25
+string rejected.
+
+
+
+
+abc_star_drew.csv is being processed with input: abc
+machine being used is, a*b*c* Nondeterministic
+input string is, abc
+
+depth 0:
+[], (q0), [abc]
+
+depth 1:
+[a], (q0), [bc]
+[a], (q1), [bc]
+[a], (q2), [bc]
+[a], (q3), [bc]
+
+depth 2:
+[ab], (q1), [c]
+[ab], (q2), [c]
+[ab], (q3), [c]
+[ab], (q1), [c]
+[ab], (q2), [c]
+[ab], (q3), [c]
+
+depth 3:
+[abc], (q2), []
+[abc], (q3), []
+
+depth 4:
+[abc_], (qacc), []
+depth of config tree: 5
+total transitions simulated: 14
+degree of ndm: 2.50
+string accepted in 5 transitions
+
+
+
+
+aplus_drew.csv is being processed with input: y
+machine being used is, aplus
+input string is, y
+
+depth 0:
+[], (q1), [y]
+depth of config tree: 1
+total transitions simulated: 1
+degree of ndm: 1.00
+string rejected.
+
+
+
+
+aplus_drew.csv is being processed with input: aaaaa
+machine being used is, aplus
+input string is, aaaaa
+
+depth 0:
+[], (q1), [aaaaa]
+
+depth 1:
+[a], (q1), [aaaa]
+
+depth 2:
+[aa], (q1), [aaa]
+
+depth 3:
+[aaa], (q1), [aa]
+
+depth 4:
+[aaaa], (q1), [a]
+
+depth 5:
+[aaaaa], (q1), []
+
+depth 6:
+[aaaaa_], (qaccept), []
+depth of config tree: 7
+total transitions simulated: 7
+degree of ndm: 1.00
+string accepted in 7 transitions
+
+
+
+
